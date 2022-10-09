@@ -1,0 +1,24 @@
+@mixin list {
+  display: flex;
+  align-items: center;
+}
+
+@mixin link {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+  border-radius: 3px;
+  background-color: #333333;
+
+  &:hover {
+    background-color: #ffbd54;
+  }
+
+  &:active {
+    background-color: #ffbd54;
+    border-radius: 3px;
+    opacity: 0.6;
+  }
+}

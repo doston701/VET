@@ -1,0 +1,105 @@
+.intro {
+  margin-top: 100px;
+}
+
+.intro__wrapper {
+  position: relative;
+  max-width: 1335px;
+  height: 238px;
+}
+
+.intro__wrapper::after {
+  content: "";
+  position: absolute;
+  width: 140px;
+  height: 2px;
+  background-color: #dbdbdb;
+  top: -40px;
+  left: 40%;
+  right: 50%;
+}
+
+.intro__wrapper::before {
+  content: "";
+  position: absolute;
+  width: 140px;
+  height: 2px;
+  background-color: #dbdbdb;
+  top: 120px;
+  left: 40%;
+  right: 70%;
+}
+
+.intro__text {
+  max-width: 753px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  margin: 0 auto;
+  color: #949494;
+}
+
+.intro__text::before {
+  position: absolute;
+  content: "";
+  width: 148px;
+  height: 45px;
+  background-image: url("../../img/hero.strealka.svg");
+  background-repeat: no-repeat;
+  right: 70px;
+  bottom: 100px;
+}
+
+.intro__text::after {
+  position: absolute;
+  content: "";
+  width: 148px;
+  height: 45px;
+  background-image: url("../../img/hero.strealka.svg");
+  background-repeat: no-repeat;
+  left: 70px;
+  top: 0;
+  transform: rotate(180deg);
+}
+
+.intro__end-text {
+  position: absolute;
+  margin-top: 70px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  color: #333333;
+  width: 395px;
+  left: 30%;
+  right: 70%;
+}
+
+@media only screen and (max-width: 1229px) {
+  .intro {
+    margin-top: 100px;
+  }
+
+  .intro__text::before {
+    display: none;
+  }
+
+  .intro__text::after {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 779px) {
+  .intro__end-text {
+    display: none;
+  }
+
+  .intro__wrapper::after {
+    content: "";
+    display: none;
+  }
+
+  .intro__wrapper::before {
+    display: none;
+  }
+}

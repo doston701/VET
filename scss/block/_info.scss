@@ -1,0 +1,150 @@
+.info {
+  background-color: #f9f8f8;
+}
+
+.info__wrapper {
+  max-width: 1117px;
+  @include list;
+  justify-content: space-between;
+  padding: 14px 0;
+  margin-left: 203px;
+}
+
+.info__address {
+  position: relative;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #333333;
+}
+
+.info__address::before {
+  position: absolute;
+  content: "";
+  width: 14px;
+  height: 13px;
+  background-image: url("../../img/header-home.svg");
+  background-repeat: no-repeat;
+  left: -24px;
+  top: 2px;
+}
+
+.info__list {
+  width: 396px;
+  @include list;
+  justify-content: space-between;
+}
+
+.info__item1 {
+  position: relative;
+}
+
+.info__link:hover {
+  color: #ffbd54;
+}
+
+.info__link:active {
+  color: #333333;
+  opacity: 0.6;
+}
+
+.info__item {
+  position: relative;
+}
+
+.info__item1::before {
+  position: absolute;
+  content: "";
+  width: 13px;
+  height: 13px;
+  background-image: url("../../img/hero-tel.svg");
+  background-repeat: no-repeat;
+  left: -22px;
+  top: 3px;
+}
+
+.info__item span {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #ffbd54;
+  left: -15px;
+  top: 7px;
+}
+
+.info__link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #333333;
+}
+
+.info__list-inner {
+  @include list;
+}
+
+.info__item-inner {
+  margin-left: 17px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #333333;
+}
+
+.info__item-inner1 {
+  position: relative;
+}
+
+.info__item-inner:nth-child(1) {
+  margin-left: 0;
+}
+
+.info__span {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  color: #333333;
+}
+
+.info__item-inner1::before {
+  position: absolute;
+  content: "";
+  width: 14px;
+  height: 14px;
+  background-image: url("../../img/header-hospital.svg");
+  background-repeat: no-repeat;
+  left: -20px;
+  top: 2px;
+}
+
+@media only screen and (max-width: 1219px) {
+  .info__wrapper {
+    max-width: 1117px;
+    @include list;
+    justify-content: space-between;
+    padding: 14px 0;
+    margin-left: 28px;
+  }
+}
+
+@media only screen and (max-width: 1028px) {
+  .info__wrapper {
+    flex-direction: column;
+  }
+
+  .info__address {
+    margin-bottom: 10px;
+  }
+
+  .info__list {
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 443px) {
+  .info {
+    display: none;
+  }
+}
