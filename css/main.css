@@ -589,7 +589,7 @@ body {
   background-size: cover;
   -webkit-transform: rotate(354deg);
           transform: rotate(354deg);
-  right: 9px;
+  right: 15px;
   bottom: -277px;
   z-index: -2;
 }
