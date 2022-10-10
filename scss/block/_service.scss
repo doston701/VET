@@ -809,6 +809,14 @@
     box-sizing: unset;
   }
 
+  .service__item:hover {
+    opacity: 0.6;
+  }
+
+  .service__item:active {
+    opacity: 0.6;
+  }
+
   .service__item:nth-child(4) {
     margin-left: 0;
   }
