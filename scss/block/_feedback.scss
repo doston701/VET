@@ -3,6 +3,7 @@
 }
 
 .feedback__wrapper {
+  position: relative;
   @include list;
   height: 649px;
   max-width: 1320px;
@@ -11,21 +12,32 @@
 .feedback__iframe {
   width: 462px;
   height: 652px;
+  z-index: 2;
 }
 
 .feedback__content {
+  position: relative;
   width: 858px;
-  background-color: #333333;
   height: 649px;
   padding: 62px 0 74px 100px;
-  background-image: url("../../img/feedback_fish.png");
+}
+
+.feedback__content::after {
+  position: absolute;
+  content: "";
+  width: 952px;
+  height: 652px;
+  background-image: url("../../img/feedback.bg__img.png");
   background-repeat: no-repeat;
-  background-position-x: right;
-  background-position-y: center;
+  background-size: cover;
+  top: 0;
+  right: 0;
+  z-index: -1;
 }
 
 .feedback__registration {
   max-width: 375px;
+  z-index: 4;
 }
 
 .feedback__title {
@@ -83,6 +95,19 @@
     margin: 0 auto;
   }
 
+  .feedback__content::after {
+    position: absolute;
+    content: "";
+    width: 952px;
+    height: 652px;
+    background-image: url("../../img/feedback.bg__img.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    right: 0;
+    z-index: -1;
+  }
+
   .feedback__iframe {
     display: none;
   }
@@ -90,14 +115,8 @@
   .feedback__content {
     max-width: 732px;
     margin: 0 auto;
-    background-color: #333333;
     height: 649px;
     padding: 62px 0 74px 100px;
-    background-image: url("../../img/feedback_fish.png");
-    background-repeat: no-repeat;
-    background-position-x: right;
-    background-position-y: center;
-    z-index: -1;
   }
 }
 
@@ -112,13 +131,21 @@
 
   .feedback__content {
     width: 600px;
-    background-color: #333333;
     height: 649px;
     padding: 30px 0 30px 20px;
-    background-image: url("../../img/feedback_fish.png");
+  }
+
+  .feedback__content::after {
+    position: absolute;
+    content: "";
+    width: 952px;
+    height: 652px;
+    background-image: url("../../img/feedback.bg__img.png");
     background-repeat: no-repeat;
-    background-position-x: right;
-    background-position-y: center;
+    background-size: cover;
+    top: 0;
+    right: 0;
+    z-index: -1;
   }
 
   .feedback__registration {
@@ -130,14 +157,22 @@
 @media only screen and (max-width: 597px) {
   .feedback__content {
     width: 600px;
-    background-color: #333333;
     height: 649px;
     margin: 0 auto;
     padding: 20px 20px 20px 20px;
-    background-image: url("../../img/feedback_fish.png");
+  }
+
+  .feedback__content::after {
+    position: absolute;
+    content: "";
+    width: 952px;
+    height: 652px;
+    background-image: url("../../img/feedback.bg__img.png");
     background-repeat: no-repeat;
-    background-position-x: right;
-    background-position-y: center;
+    background-size: cover;
+    top: 0;
+    right: 0;
+    z-index: -1;
   }
 }
 
@@ -147,6 +182,19 @@
     height: 50px;
     margin-bottom: 14px;
     padding-left: 22px;
+  }
+
+  .feedback__content::after {
+    position: absolute;
+    content: "";
+    width: 952px;
+    height: 652px;
+    background-image: url("../../img/feedback.bg__img.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    right: 0;
+    z-index: -1;
   }
 
   .feedback__input-email {
